@@ -2,7 +2,7 @@
 
 set -ex
 
-gcc -c picohttpparser.c -O3 -fpic -msse4.2
+gcc -c picohttpparser.c -O3 -fpic
 gcc -shared -o libpicohttpparser.so picohttpparser.o
 if [[ `uname` == "Darwin" ]]
 then
